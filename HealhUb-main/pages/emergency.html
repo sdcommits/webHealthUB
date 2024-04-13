@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immediate Consulting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711756800&semt=sph');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+    }
+    .box h2 {
+      margin-top: 0;
+    }
+
+    .box p{
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        /* margin-right: 5px; */
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .qr-code {
+      width: 150px;
+      height: auto;
+    }
+    button a{
+        text-decoration: none;
+        color:white;
+    }
+    .heading h1{
+     position: absolute;
+     top:10%;
+     display: flex;
+     justify-content: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="heading"><h1>Immediate Consultation and Payment</h1></div>
+  <div class="box">
+    <h2>Video Call</h2>
+   <button class="btn"> <a href="vc.html">Start Video Call</a></button>
+  </div>
+  <div class="box">
+    <h2>Scan QR Code</h2>
+    <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=upi://pay?pa=your-merchant-vpa@bank&pn=Your%20Merchant%20Name&mc=your-merchant-code&tid=your-transaction-id&tr=transaction-amount&tn=transaction-description" alt="Google Pay QR Code">
+
+<!-- Provide instructions for users -->
+<p>Scan the QR code with your smartphone camera to open Google Pay.</p>
+  </div>
+</body>
+</html>
